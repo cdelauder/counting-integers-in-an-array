@@ -1,0 +1,10 @@
+def count_between(array, lower_bound, upper_bound)
+  new_array = []
+  array[lower_bound..upper_bound].each do |i|
+    if i.is_a? Integer
+      new_array.push(i)
+    end
+  end
+  return new_array.length
+end
+count_between([2, 4, 65, "p", 3 , 546], 0, 100)
